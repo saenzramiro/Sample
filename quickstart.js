@@ -17,7 +17,7 @@
 
       function getUserInfo(interactive, buttonId) {
           if (getButtonId(buttonId)) {
-            url = 'https://www.googleapis.com/auth/calendar.readonly';
+            url = 'https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/contacts.readonly';
           } else {
               url = 'https://www.googleapis.com/auth/contacts.readonly';
           }
