@@ -77,7 +77,7 @@
       }
       
       function loadCalendarDetails() {
-        var url = "https://www.googleapis.com/calendar/v3/calendars/primary/events?singleEvents=true&&key=" + access_token;
+        var url = "https://www.googleapis.com/calendar/v3/calendars/primary/events?&&key=" + access_token;
         xhrWithAuth('GET',
           url,
           false,
@@ -109,6 +109,10 @@
 
       function onUserInfoFetched2(error, status, response, buttonId) {
           if (!error && status == 200) {
+            console.log("response : " , response);
+            var parser=new DOMParser();
+            var xmlDoc=parser.parseFromString(response,"text/xml");
+          console.log("title : ", xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue);
               authorizeContacts.style.display = 'none';
               var pre = document.getElementById('output');
               var textContent = document.createTextNode(response);
@@ -130,7 +134,7 @@
                           when = event.start.date;
                       }
                       var d = new Date();
-                      if (when > d.toISOString()) {
+                      if (when >= d.toISOString()) {
                       appendPre(event.summary + ' (' + when + ')');
                       }
                   }
