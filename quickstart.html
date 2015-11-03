@@ -2,20 +2,24 @@
   <head>
   </head>
   <body>
-    <div id="authorize-div">
-      <span>Authorize access to calendar</span>
-      <!--Button for the user to click to initiate auth sequence -->
-      <button id="authorize-calendar">
-        Authorize Calendar
-      </button>
+    <div class="select">
+      <label for="audioSource">Audio input source: </label><select id="audioSource"></select>
     </div>
-    <div id="authorize-contacts">
-      <span>Authorize access to contacts</span>
-      <button id="authorize-contacts">
-        Authorize Contacts
-      </button>
+    <div class="select">
+      <label for="audioOutput">Audio output destination: </label><select id="audioOutput"></select>
     </div>
-    <pre id="output"></pre>
+    <div class="select">
+      <label for="videoSource">Video source: </label><select id="videoSource"></select>
+    </div>
+    <label for="VideoSize">Video Size: </label>
+     <div class="button">
+      <button id="Small" value="Small">Small</button>
+      <button id="Medium" value="Medium">Medium</button>
+      <button id="Large" value="Large">Large</button>
+      <button id="HD" value="HD">HD</button>
+      </br>
+    </div>
+    <video id="video" autoplay></video>
     <script type="text/javascript" src="quickstart.js"></script>
   </body>
 </html>

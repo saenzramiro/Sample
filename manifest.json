@@ -3,18 +3,13 @@
   "description": "My first Chrome App.",
   "version": "0.1",
   "manifest_version": 2,
-  "key": "ogkilpaecjcgoifmloehnpbnllmdeoad",
   "app": {
     "background": {
       "scripts": ["background.js"]
     }
   },
-  "oauth2": {
-    "client_id": "533689448782-et9is0o80d6ho6gnvjo9hiahuk0aa78t.apps.googleusercontent.com",
-    "scopes": ["https://www.googleapis.com/auth/calendar.readonly" , "https://www.google.com/m8/feeds/" , "https://www.googleapis.com/auth/contacts.readonly"]
-  },
   "offline_enabled": true,
-  "permissions": [ "identity" , "https://accounts.google.com/*" , "https://www.googleapis.com/*" , "http://*/", "https://*/"],
+  "permissions": [ "https://*/", "videoCapture", "audioCapture"],
   "icons": {
      "16": "calculator-16.png", 
     "128": "calculator-128.png"

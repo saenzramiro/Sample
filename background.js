@@ -1,8 +1,8 @@
 chrome.app.runtime.onLaunched.addListener(function() {
   chrome.app.window.create('quickstart.html', {
     'bounds': {
-      'width': 500,
-      'height': 600
+      'width': 1300,
+      'height': 825
     }
   });
 });
