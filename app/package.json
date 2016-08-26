@@ -1,0 +1,13 @@
+{
+  "name"    : "Sample",
+  "version" : "0.1.0",
+  "description" : "Unified Communication",
+  "main"    : "main.js",
+  "author": "Tushar",
+  "license": "ISC",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+	"auto-launch": "^4.0.0",
+	"electron-gh-releases": "^2.0.4"
+  }
+}

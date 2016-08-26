@@ -1,5 +1,23 @@
 {
-  "name"    : "Demo app",
-  "version" : "0.0.1",
-  "main"    : "main.js"
+  "name": "Sample",
+  "version": "0.1.0",
+  "description": "Unified Communication",
+  "main": "main.js",
+  "author": "Tushar",
+  "license": "ISC",
+  "build": {
+    "appId": "com.electron.demo.sample",
+    "copyright": "© 2016 Tushar. All rights reserved.",
+    "asar": "true",
+    "productName": "Sample",
+    "win": {
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Electron_0.36.4_Icon.png",
+      "icon": "C:/BroadSoft/Demo/Sample/build/app.ico",
+      "legalTrademarks": "This software uses various 3rd party software via ISC or other permissive licenses."
+    }
+  },
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build"
+  }
 }
